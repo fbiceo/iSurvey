@@ -1,18 +1,247 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
+<ion-header >
+  <ion-navbar color=primary>
+    <ion-title>肺癌口服標靶藥物相關皮膚毒性與副作用症狀嚴重度評估分級表</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content padding> 
+  <ion-card class="cards-list"> 
+    <ion-card-header>
+      痤瘡樣疹/丘疹膿皰
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list radio-group>      
+        <ion-item>
+          <ion-label text-wrap>第一級：丘疹或膿皰覆蓋＜10%體表面積，可能有或無相關的搔癢或觸壓痛症狀。</ion-label>
+          <ion-radio value="1" item-left></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label text-wrap>第二級：丘疹或膿皰覆蓋10%~30%體表面積，可能有或無相關的搔癢或觸壓痛症狀，造成心理影響，工具性日常生活活動（IADL）受限。</ion-label>
+          <ion-radio value="2" item-left></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label text-wrap>第三級：丘疹或膿皰覆蓋＞30%體表面積，可能有或無相關的搔癢或觸壓痛症狀，自我照護日常生活活動受限，有局部續發感染需使用口服抗生素。</ion-label>
+          <ion-radio value="3" item-left></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label text-wrap>第四級：不限丘疹或膿皰覆蓋範圍，可能有或無相關的搔癢或觸壓痛症狀，廣泛性續發感染需使用靜脈注射抗生素防止感染，危及生命。</ion-label>
+          <ion-radio value="4" item-left></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-radio value="5" item-left></ion-radio>
+          <ion-label text-wrap>第五級：死亡。</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    <ion-card-header>
+      皮膚搔癢
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：輕度且需局部治療。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：劇烈、廣泛且斷續出現，由抓癢皮膚改變（腫脹、丘疹、脫皮、表皮增生、滲液或結痂），需給予口服藥，工具性日常生活活動受限。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第三級：劇烈、廣泛且持續出現，自我照護日常生活活動或睡眠受限，需使用口服類固醇或免疫抑制劑藥物治療。</ion-label>
+            <ion-radio value="3" item-left></ion-radio>
+          </ion-item>          
+        </ion-list>
+      </ion-card-content>
+      <ion-card-header>
+      皮膚乾燥
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：＜10%體表面積且無紅疹及搔癢。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：10%~30%體表面積伴隨紅疹或搔癢，工具性日常生活活動受限。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第三級：＞30%體表面積有搔癢，自我照護日常生活活動受限。</ion-label>
+            <ion-radio value="3" item-left></ion-radio>
+          </ion-item>          
+        </ion-list>
+      </ion-card-content>
+      <ion-card-header>
+      色素沉著
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：色素沉著覆蓋＜10%體表面積;無心理社會層面影響。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：色素沉著覆蓋>10%體表面積;影響相關的心理社會層面。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>          
+        </ion-list>
+      </ion-card-content>
+      <ion-card-header>
+        紅斑
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：病灶覆蓋＜10%體表面積但無觸痛感。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：病灶覆蓋10%~30%體表面積，且有觸痛感。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第三級：病灶覆蓋＞30%體表面積，且與口腔或生殖器潰爛相關。</ion-label>
+            <ion-radio value="3" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第四級：病灶覆蓋＞30%體表面積，並有體液電解質異常，需於加護病房或燒燙傷單位治療。</ion-label>
+            <ion-radio value="4" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-radio value="5" item-left></ion-radio>
+            <ion-label text-wrap>第五級：死亡。</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+      <ion-card-header>
+        光敏感
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：無痛紅疹且紅疹覆蓋<10％體表面積。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：紅疹覆蓋10~30％體表面積。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第三級：紅疹覆蓋>30％體表面積伴隨水泡;對光敏感;需口服類固醇治療、疼痛控制治療（例如，麻醉劑或非類固醇抗發炎止痛劑）。</ion-label>
+            <ion-radio value="3" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第四級：危及生命，需接受緊急處置。</ion-label>
+            <ion-radio value="4" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-radio value="5" item-left></ion-radio>
+            <ion-label text-wrap>第五級：死亡。</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>    
+      <ion-card-header>
+        甲溝炎
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：指甲根部有水腫或紅斑；表皮有破損。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：給予局部照護及口服藥物（如抗生素，抗黴菌，抗病毒）;指甲根部水腫或紅斑，有分泌物或指甲表面剝離，並影響工具性日常生活受限。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第三級：給予外科手術或靜脈注射抗生素，自我照護日常生活活動受限。</ion-label>
+            <ion-radio value="3" item-left></ion-radio>
+          </ion-item>          
+        </ion-list>
+      </ion-card-content>    
+      <ion-card-header>
+        指甲改變含變色/脫落/壟起
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：無症狀；僅臨床診斷與觀察;未有處置。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：從指甲表面或指甲脫落有指甲分離症狀，且工具性日常生活活動受限（指甲脫落）。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>   
+      <ion-card-header>
+        落髮
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：與個別正常情形相比落髮＜50％，從遠處看不明顯的，只有在仔細檢查時；可能需要不同的髮型來掩蓋，但並不需要一個假髮或髮片修飾。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：與個別正常情形相比落髮≧50％，很顯而易見，且需用假髮或髮片且影響心理社會層面。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>   
+      <ion-card-header>
+        口腔炎
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：無症狀或症狀輕微。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：中度疼痛；由口飲食未受干擾;需調整飲食。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第三級：疼痛劇烈；由口飲食受干擾。</ion-label>
+            <ion-radio value="3" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第四級：有危急生命的後果；需給予積極醫療照護。</ion-label>
+            <ion-radio value="4" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-radio value="5" item-left></ion-radio>
+            <ion-label text-wrap>第五級：死亡。</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content> 
+      <ion-card-header>
+        腹瀉
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list radio-group>      
+          <ion-item>
+            <ion-label text-wrap>第一級：比平日每天增加<4次大便，造口引流量輕度增加。</ion-label>
+            <ion-radio value="1" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第二級：比平日每天增加4-6次大便，造口引流量中度增加。</ion-label>
+            <ion-radio value="2" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第三級：比平日每天增加≧7次大便，失禁需住院；造口引流量嚴重增加；並影響自我照護的日常生活。</ion-label>
+            <ion-radio value="3" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label text-wrap>第四級：有危急生命的後果；需給予積極醫療照護。</ion-label>
+            <ion-radio value="4" item-left></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-radio value="5" item-left></ion-radio>
+            <ion-label text-wrap>第五級：死亡。</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>     
+  </ion-card>
 </ion-content>
